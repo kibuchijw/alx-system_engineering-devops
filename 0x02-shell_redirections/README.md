@@ -5,3 +5,4 @@ __This Is a file that explains the various tasks for pracriticing  sheell I/O__
 3. An executable that displays the contents of /etc/passwd and /etc/hosts
 4. An executable that displays the last 10 lines of /etc/passwd
 5. An executable that displays the first 10 lines of /etc/passwd
+6. An executable that displays the third line of the file iacta
