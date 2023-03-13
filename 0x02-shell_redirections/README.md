@@ -15,4 +15,6 @@ __This Is a file that explains the various tasks for pracriticing  sheell I/O__
 13. An executable that inputs unique words from a list and lists them sorted.
 14. An executable that greps root in the directory  /etc/passwd
 15. An executable that lists the number of times a grepped word appears
-16. An executable that list the number of times a grepped word appears with lines after it
+16. An executable that lists the number of times a grepped word appears with lines after it
+17. An executable that displays the lines that do not contain bin
+18. Display all files starting with a letter
