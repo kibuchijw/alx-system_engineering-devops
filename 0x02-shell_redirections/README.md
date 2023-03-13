@@ -6,3 +6,4 @@ __This Is a file that explains the various tasks for pracriticing  sheell I/O__
 4. An executable that displays the last 10 lines of /etc/passwd
 5. An executable that displays the first 10 lines of /etc/passwd
 6. An executable that displays the third line of the file iacta
+7. An executable that created a file whose name had special characters
