@@ -13,3 +13,4 @@ __This Is a file that explains the various tasks for pracriticing  sheell I/O__
 11. An executable that counts all directories and subdirectories, save for the current and parent directory
 12. An executable that lists 10 latest files
 13. An executable that inputs unique words from a list and lists them sorted.
+14. An executable that greps root in the directory  /etc/passwd
