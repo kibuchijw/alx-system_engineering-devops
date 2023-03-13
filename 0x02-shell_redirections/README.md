@@ -9,3 +9,4 @@ __This Is a file that explains the various tasks for pracriticing  sheell I/O__
 7. An executable that creates a file whose name had special characters
 8. An executable that creates pipes the result of a command into a file
 9. An executable that duplicates the last line of a file
+10. An executable that deletes all files with a .js extension, recursively
