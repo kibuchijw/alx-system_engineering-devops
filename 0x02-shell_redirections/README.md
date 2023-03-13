@@ -1,4 +1,5 @@
 __This Is a file that explains the various tasks for pracriticing  sheell I/O__
+0. An executable that prints "Hello, World"
 1.  An executable that displays a confused smiley
 2. An executable that displays the contents of /etc/passwd
 3. An executable that displays the contents of /etc/passwd and /etc/hosts
