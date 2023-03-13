@@ -8,3 +8,4 @@ __This Is a file that explains the various tasks for pracriticing  sheell I/O__
 6. An executable that displays the third line of the file iacta
 7. An executable that creates a file whose name had special characters
 8. An executable that creates pipes the result of a command into a file
+9. An executable that duplicates the last line of a file
