@@ -10,4 +10,5 @@ __This Is a file that explains the various tasks for pracriticing  sheell I/O__
 8. An executable that creates pipes the result of a command into a file
 9. An executable that duplicates the last line of a file
 10. An executable that deletes all files with a .js extension, recursively
-11. an executable that counts all directories and subdirectories, save for the current and parent directory
+11. An executable that counts all directories and subdirectories, save for the current and parent directory
+12. An executable that lists 10 latest files
