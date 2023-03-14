@@ -1,2 +1,2 @@
 #!/bin/bash
-echo < | tr -d 'Cc'
+echo "Input: " | read echo "Input:$REPLY" | tr -d 'Cc'
