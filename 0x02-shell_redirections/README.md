@@ -19,3 +19,4 @@ __This Is a file that explains the various tasks for pracriticing  sheell I/O__
 17. An executable that displays the lines that do not contain bin
 18. Display all files starting with a letter
 19. Replace all characters A and c with Z and e respectively
+20. Remove specific letters from input
