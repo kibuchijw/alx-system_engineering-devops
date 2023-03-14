@@ -9,3 +9,4 @@ __ This is a listing of tasks meant to practice  Shell Variable and Expansins co
 7. Create new global variable
 8. Add number to variable
 9. Divide variables
+10. Variable to the power of another variable
