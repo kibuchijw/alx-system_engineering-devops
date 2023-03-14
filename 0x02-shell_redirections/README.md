@@ -21,3 +21,4 @@ __This Is a file that explains the various tasks for pracriticing  sheell I/O__
 19. Replace all characters A and c with Z and e respectively
 20. Remove specific letters from input
 21. Reverse input
+22. Display all users and their home directories, sorted by users
