@@ -6,3 +6,4 @@ __ This is a listing of tasks meant to practice  Shell Variable and Expansins co
 4. Display environment variables
 5. List local variables, environment variables and functions
 6. Create new local variable
+7. Create new global variable
