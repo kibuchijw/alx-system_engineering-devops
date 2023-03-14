@@ -7,3 +7,5 @@ __ This is a listing of tasks meant to practice  Shell Variable and Expansins co
 5. List local variables, environment variables and functions
 6. Create new local variable
 7. Create new global variable
+8. Add number to variable
+9. Divide variables
