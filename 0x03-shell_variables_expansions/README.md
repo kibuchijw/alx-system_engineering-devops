@@ -13,3 +13,5 @@ __ This is a listing of tasks meant to practice  Shell Variable and Expansins co
 11. Convert number from base 2 to base 10
 12. Print all possible combinations of two letters, except oo
 13. Print number with two decimal places followed by a new line and stored in an environment variable
+14. Changes decimal to hexadecimal
+15. Encode text using rot13 encryption, assume ASCII
