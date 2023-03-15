@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Input: " | read echo "Input:$READ" | rev
+rev
