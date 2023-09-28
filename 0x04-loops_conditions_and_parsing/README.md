@@ -10,6 +10,7 @@
 | 5. 4 bad luck, 8 is your chance | [5-4_bad_luck_8_is_your_chance](./5-4_bad_luck_8_is_your_chance) |
 | 6. Superstitious numbers | [6-superstitious_numbers](./6-superstitious_numbers) |
 | 7. Clock | [7-clock](./7-clock) |
+| 8. For ls | [8-for_ls](./8-for_ls) |
 
 ## Tasks
 ### 0. Create a SSH RSA key pair
@@ -32,3 +33,8 @@
 * Bash script that displays the time for 12 hoours and 59 minutes
 	* Display hours from 0 - 12
 	* Display minutes from 1 - 59
+### 8. For ls
+* Bash script that displays:
+	* Content of the current directory
+	* In a list format
+	* Only part of the name after the hyphen is displayed

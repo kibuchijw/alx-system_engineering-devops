@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Displays the contents of the directory in a list format
+
+directory_contents=""
+
+for file in *
+do
+	# check if file is hidden
+	if [[ "$file" == .* ]]; then
+		continue
+	else
+		# Extract file name after hyphen
+		directory_contents=$(echo "$file" | cut -d '-' -f 2-)
+		echo "$directory_contents"
+	fi
+done
