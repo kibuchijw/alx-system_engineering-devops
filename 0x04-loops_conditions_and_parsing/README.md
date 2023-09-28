@@ -8,6 +8,8 @@
 | 3. Until Best School loop | [3-until_best_school](./3-until_best_school) |
 | 4. If 9, say Hi! | [4-if_9_say_hi](./4-if_9_say_hi) |
 | 5. 4 bad luck, 8 is your chance | [5-4_bad_luck_8_is_your_chance](./5-4_bad_luck_8_is_your_chance) |
+| 6. Superstitious numbers | [6-superstitious_numbers](./6-superstitious_numbers) |
+| 7. Clock | [7-clock](./7-clock) |
 
 ## Tasks
 ### 0. Create a SSH RSA key pair
@@ -26,3 +28,7 @@
 	* Displays `bad luck` for the 4th loop iteration.
 	* Displays `good luck` for the 8th loop iteration.
 	* Displays `Best School` for the other iterations.
+### 7. Clock
+* Bash script that displays the time for 12 hoours and 59 minutes
+	* Display hours from 0 - 12
+	* Display minutes from 1 - 59
