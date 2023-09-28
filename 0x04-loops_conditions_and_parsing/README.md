@@ -11,6 +11,7 @@
 | 6. Superstitious numbers | [6-superstitious_numbers](./6-superstitious_numbers) |
 | 7. Clock | [7-clock](./7-clock) |
 | 8. For ls | [8-for_ls](./8-for_ls) |
+| 9. To file, or not to file | [9-to_file_or_not_to_file](./9-to_file_or_not_to_file) |
 
 ## Tasks
 ### 0. Create a SSH RSA key pair
@@ -38,3 +39,13 @@
 	* Content of the current directory
 	* In a list format
 	* Only part of the name after the hyphen is displayed
+### 9. To file, or not to file
+* Bash script that gives you information about the `school` file
+	* Bash script should check if file exists and print:
+		* If the file exists: `school file exists`
+		* If the file does not exist: `school file does not exist`
+	* If the file exists, print:
+		* If the file is empty: `school file is empty`
+		* If the file is not empty: `school file is not empty`
+		* If the file is a regular file: `school is a regular file`
+		* If the file is not a regular file:(nothing)
