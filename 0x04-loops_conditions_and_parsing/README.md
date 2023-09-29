@@ -12,6 +12,7 @@
 | 7. Clock | [7-clock](./7-clock) |
 | 8. For ls | [8-for_ls](./8-for_ls) |
 | 9. To file, or not to file | [9-to_file_or_not_to_file](./9-to_file_or_not_to_file) |
+| 10. FizzBuzz | [10-fizzbuzz](./10-fizzbuzz) |
 
 ## Tasks
 ### 0. Create a SSH RSA key pair
@@ -49,3 +50,8 @@
 		* If the file is not empty: `school file is not empty`
 		* If the file is a regular file: `school is a regular file`
 		* If the file is not a regular file:(nothing)
+### 10. FizzBuzz
+* Bash script that displays numbers from 1 - 100
+	* Displays `FizzBuzz` when number is a multiple of 3 and 5
+	* Displays `Fizz` when number is a multiple of 3
+	* Displays `Buzz` when number is a multiple of 5
