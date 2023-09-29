@@ -13,6 +13,7 @@
 | 8. For ls | [8-for_ls](./8-for_ls) |
 | 9. To file, or not to file | [9-to_file_or_not_to_file](./9-to_file_or_not_to_file) |
 | 10. FizzBuzz | [10-fizzbuzz](./10-fizzbuzz) |
+| 11. Read and cut | [100-read_and_cut](./100-read_and_cut) |
 
 ## Tasks
 ### 0. Create a SSH RSA key pair
@@ -55,3 +56,9 @@
 	* Displays `FizzBuzz` when number is a multiple of 3 and 5
 	* Displays `Fizz` when number is a multiple of 3
 	* Displays `Buzz` when number is a multiple of 5
+### 11. Read and cut
+* Bash script that displays the contents of the file `/etc/passwd`
+	* Script should only display:
+		* username
+		* user id
+		* Home directory path for the user
