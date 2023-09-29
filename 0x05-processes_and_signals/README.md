@@ -11,6 +11,7 @@
 | 5. Don't stop me now! | [5-dont_stop_me_now](./5-dont_stop_me_now) |
 | 6. Stop me if you can | [6-stop_me_if_you_can](./6-stop_me_if_you_can) |
 | 7. Highlander | [7-highlander](./7-highlander) |
+| 8. Beheaded process | [8-beheaded_process](./8-beheaded_process) |
 
 ## Tasks
 ### 0. What is my PID
@@ -36,3 +37,5 @@
 	* `To infinity and beyond` indefinitely
 	* With a `sleep 2` in between each iteration
 	* Displays `I am invincible!!!` when receiving a SIGTERM signal
+### 8. Beheaded process
+* Bash script that kills the process `7-highlander`
