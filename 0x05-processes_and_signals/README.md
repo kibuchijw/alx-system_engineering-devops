@@ -8,6 +8,8 @@
 | 2. Show your Bash PID | [2-show_your_bash_pid](./2-show_your_bash_pid) |
 | 3. Show your Bash PID made easy | [3-show_your_bash_pid_made_easy](./3-show_your_bash_pid_made_easy) |
 | 4. To infinity and beyond | [4-to_infinity_and_beyond](./4-to_infinity_and_beyond) |
+| 5. Don't stop me now! | [5-dont_stop_me_now](./5-dont_stop_me_now) |
+| 6. Stop me if you can | [6-stop_me_if_you_can](./6-stop_me_if_you_can) |
 
 ## Tasks
 ### 0. What is my PID
@@ -24,3 +26,7 @@
 ### 4. To infinity and beyond
 * Bash script that displays `To infinity and beyond` indefinitely
 	* In between each iteration of the loop, add a `sleep 2`
+### 5. Don't stop me now!
+* Bash script to terminate `4-to_infinity_and_beyond` using `kill`
+### 6. Stop me if you can
+* Bash script to terminate `4-to_infinity_and_beyond` using `pfkill`
