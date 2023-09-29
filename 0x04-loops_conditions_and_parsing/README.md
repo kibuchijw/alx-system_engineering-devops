@@ -14,6 +14,7 @@
 | 9. To file, or not to file | [9-to_file_or_not_to_file](./9-to_file_or_not_to_file) |
 | 10. FizzBuzz | [10-fizzbuzz](./10-fizzbuzz) |
 | 11. Read and cut | [100-read_and_cut](./100-read_and_cut) |
+| 12. Tell the story of passwd | [101-tell_the_story_of_passwd](./101-tell_the_story_of_passwd) |
 
 ## Tasks
 ### 0. Create a SSH RSA key pair
@@ -62,3 +63,5 @@
 		* username
 		* user id
 		* Home directory path for the user
+### 12. Tell the story of passwd
+* Bash script that displays the contents of the file `/etc/passwd`, using the `while` loop + IFS
