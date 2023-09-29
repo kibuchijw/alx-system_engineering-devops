@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Bash script that displays "To infinity and beyond" indefinitely
+
+# Function to handle SIGTERM
+cleanup()
+{
+	echo "I am invincible!!!"
+}
+# Trap SIGTERM
+trap 'cleanup' SIGTERM
+
+while true;
+do
+	echo "To infinity and beyond"
+	sleep 2
+done

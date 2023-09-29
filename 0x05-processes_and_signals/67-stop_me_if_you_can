@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 # Bash script that stops 4-to_infinity_and_beyond using kill
 
-pid=$(pgrep -o -f "4-to_infinity_and_beyond")
-kill "$pid"
+pkill -f "7-highlander"

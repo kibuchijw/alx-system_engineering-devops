@@ -10,6 +10,7 @@
 | 4. To infinity and beyond | [4-to_infinity_and_beyond](./4-to_infinity_and_beyond) |
 | 5. Don't stop me now! | [5-dont_stop_me_now](./5-dont_stop_me_now) |
 | 6. Stop me if you can | [6-stop_me_if_you_can](./6-stop_me_if_you_can) |
+| 7. Highlander | [7-highlander](./7-highlander) |
 
 ## Tasks
 ### 0. What is my PID
@@ -30,3 +31,8 @@
 * Bash script to terminate `4-to_infinity_and_beyond` using `kill`
 ### 6. Stop me if you can
 * Bash script to terminate `4-to_infinity_and_beyond` using `pfkill`
+### 7. Highlander
+* Bash script that displays:
+	* `To infinity and beyond` indefinitely
+	* With a `sleep 2` in between each iteration
+	* Displays `I am invincible!!!` when receiving a SIGTERM signal
