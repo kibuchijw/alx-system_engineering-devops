@@ -6,6 +6,7 @@
 | 1. Types of network | [1-types_of_network](./1-types_of_network) |
 | 2. MAC and IP address | [2-MAC_and_IP_address](./2-MAC_and_IP_address) |
 | 3. UDP and TCP | [3-UDP_and_TCP](./3-UDP_and_TCP) |
+| 4. TCP and UDP ports | [4-TCP_and_UDP_ports](./4-TCP_and_UDP_ports) |
 
 ## Tasks
 ### 0. OSI model
@@ -26,3 +27,7 @@
 	* Which statement is correct for the TCP box
 	* Which statement is correct for the UDP box
 	* Which statement is correct for the TCP worker
+### 4. TCP and UDP ports
+* Bash script that displays listening ports
+	* Shows only listening sockets
+	* Shows the PID and name of program to which each socket belongs
