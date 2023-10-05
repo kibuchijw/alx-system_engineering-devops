@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Bash script that displays all active IPv4 IPs on the machine it's executed on
+
+# 'ip' command lists all active IPv4 addresses
+# 'awk' filters out IPv6 addresses
+# 'cut' extracts IP address from output
+# 'sort-u' sorts and removes duplicates
+ip addr show | awk '/inet / && !/inet6/ {print $2}' | cut -d'/' -f1 | sort -u
