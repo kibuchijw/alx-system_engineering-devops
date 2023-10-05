@@ -7,6 +7,7 @@
 | 2. MAC and IP address | [2-MAC_and_IP_address](./2-MAC_and_IP_address) |
 | 3. UDP and TCP | [3-UDP_and_TCP](./3-UDP_and_TCP) |
 | 4. TCP and UDP ports | [4-TCP_and_UDP_ports](./4-TCP_and_UDP_ports) |
+| 5. Is the host on the network | [5-is_the_host_on_the_network](./5-is_the_host_on_the_network) |
 
 ## Tasks
 ### 0. OSI model
@@ -31,3 +32,8 @@
 * Bash script that displays listening ports
 	* Shows only listening sockets
 	* Shows the PID and name of program to which each socket belongs
+### 5. Is the host on the network
+* Bash script that pings an IP address passed as an argument
+	* Accepts a string as an argument
+	* Displays `Usage: 5-is_the_host_on_the_network {IP_ADDRESS}` if no argument is passed
+	* Pint the IP 5 times
