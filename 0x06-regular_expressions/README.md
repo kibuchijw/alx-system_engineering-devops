@@ -8,6 +8,7 @@
 | 3. Repetition Token #2 | [3-repetition_token_2.rb](./3-repetition_token_2.rb) |
 | 4. Repetition Token #3 | [4-repetition_token_3.rb](./4-repetition_token_3.rb) |
 | 5. Not quite HBTN yet | [5-beginning_and_end.rb](./5-beginning_and_end.rb) |
+| 6. Call me maybe | [6-phone_number.rb](./6-phone_number.rb) |
 
 ## Tasks
 ### 0. Simply matching School
@@ -22,3 +23,5 @@
 * A regular expression that matches cases as specified
 ### 5. Not quite HBTN yet
 * A regular expressions that matches exactly a string starting with `h` and ends with `n` and can have any single character in between.
+### 6. Call me maybe
+* A regular expression that matched a 10 digit phone number
