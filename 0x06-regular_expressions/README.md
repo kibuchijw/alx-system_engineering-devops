@@ -7,6 +7,7 @@
 | 2. Repetition Token #1 | [2-repetition_token_1.rb](./2-repetition_token_1.rb) |
 | 3. Repetition Token #2 | [3-repetition_token_2.rb](./3-repetition_token_2.rb) |
 | 4. Repetition Token #3 | [4-repetition_token_3.rb](./4-repetition_token_3.rb) |
+| 5. Not quite HBTN yet | [5-beginning_and_end.rb](./5-beginning_and_end.rb) |
 
 ## Tasks
 ### 0. Simply matching School
@@ -19,3 +20,5 @@
 * A regular expression that matches a string `hb` followed by a number of `t` and `n`
 ### 4. Repetition Token #3
 * A regular expression that matches cases as specified
+### 5. Not quite HBTN yet
+* A regular expressions that matches exactly a string starting with `h` and ends with `n` and can have any single character in between.
