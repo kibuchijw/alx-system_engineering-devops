@@ -9,6 +9,7 @@
 | 4. Repetition Token #3 | [4-repetition_token_3.rb](./4-repetition_token_3.rb) |
 | 5. Not quite HBTN yet | [5-beginning_and_end.rb](./5-beginning_and_end.rb) |
 | 6. Call me maybe | [6-phone_number.rb](./6-phone_number.rb) |
+| 7. OMG WHY ARE YOU SHOUTING? | [7-OMG_WHY_ARE_YOU_SHOUTING.rb](./7-OMG_WHY_ARE_YOU_SHOUTING.rb) |
 
 ## Tasks
 ### 0. Simply matching School
@@ -24,4 +25,6 @@
 ### 5. Not quite HBTN yet
 * A regular expressions that matches exactly a string starting with `h` and ends with `n` and can have any single character in between.
 ### 6. Call me maybe
-* A regular expression that matched a 10 digit phone number
+* A regular expression that matches a 10 digit phone number
+### 7. OMG WHY ARE YOU SHOUTING?
+* A regular expression that matches only capital letters
