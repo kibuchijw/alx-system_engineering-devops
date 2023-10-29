@@ -7,6 +7,7 @@
 * You must be able to explain what each component is doing
 * You must be able to explain system redundancy
 * Know all the mentioned acronyms: LAMP, SPOF, QPS
+
 | Task | File |
 | ---- | ---- |
 | 0. Simple web stack | [0-simple_web_stack](./0-simple_web_stack) |
