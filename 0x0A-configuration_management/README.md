@@ -4,6 +4,7 @@
 | ---- | ---- |
 | 0. Create a file | [0-create_a_file.pp](./0-create_a_file.pp) |
 | 1. Install a package | [1-install_a_package.pp](./1-install_a_package.pp) |
+| 2. Execute a command | [2-execute_a_command.pp](./2-execute_a_command.pp) |
 
 ## Tasks
 ### 0. Create a file
@@ -19,3 +20,8 @@
 * Requirements:
 	* Install `flask`
 	* Version must be `2.1.0`
+### 2. Execute a command
+* Using Puppet, create a manifest that kills a process named `killmenow`.
+* Requirements:
+	* Must use the `exec` Puppet resource
+	* Must use `pkill`
