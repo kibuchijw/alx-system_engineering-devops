@@ -12,6 +12,9 @@
 | Task | File |
 | ---- | ---- |
 | 0. Transfer a file to your server | [0-transfer_file](./0-transfer_file) |
+| 1. Install nginx web server | [1-install_nginx_web_server](./1-install_nginx_web_server) |
+| 2. Setup a domain name | [2-setup_a_domain_name](./2-setup_a_domain_name) |
+| 3. Redirection | [3-redirection](./3-redirection) |
 
 ## Tasks
 ### 0. Transfer a file to your server
@@ -39,3 +42,9 @@
 * Requirement:
     * Provide the domain name only(example:`foobar.tech`), no subdomain(example: `www.foobar.tech`)
     * configure your DNS records with an A entry so that your root domain points to `web-01` IP address
+### 3. Redirection
+* Configure your Nginx server so that `/redirec_me` is redirecting to another page.
+* Requirements:
+    * The redirection must be a "301 Moved Permanently"
+    * The answer file should be a Bash script containing commands to automatically configure a Ubuntu machine to respect above requirements
+    * Using what you did with `1-install_nginx_web_server`, write `3-redirection` so that it configures a brand new Ubuntu machine to the requirements asked in the task
