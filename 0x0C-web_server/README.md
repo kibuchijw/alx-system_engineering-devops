@@ -15,6 +15,7 @@
 | 1. Install nginx web server | [1-install_nginx_web_server](./1-install_nginx_web_server) |
 | 2. Setup a domain name | [2-setup_a_domain_name](./2-setup_a_domain_name) |
 | 3. Redirection | [3-redirection](./3-redirection) |
+| 4. Not found page 404 | [4-not_found_page_404](./4-not_found_page_404) |
 
 ## Tasks
 ### 0. Transfer a file to your server
@@ -48,3 +49,9 @@
     * The redirection must be a "301 Moved Permanently"
     * The answer file should be a Bash script containing commands to automatically configure a Ubuntu machine to respect above requirements
     * Using what you did with `1-install_nginx_web_server`, write `3-redirection` so that it configures a brand new Ubuntu machine to the requirements asked in the task
+### 4. Not found page 404
+* Configure your Nginx server to have a custom 404 page that contains the string `Ceci n'est pas une page`.
+* Requirements:
+    * The page must return an HTTP 404 error code
+    * The page must contain the string `Ceci n'est pas une page`
+    * Using what you did with `3-redirection`, write `4-not_found_page_404` so that it configures a brand new Ubuntu machine to the requirements asked in the task

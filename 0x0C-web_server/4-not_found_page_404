@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+# Update repositories and install nginx on the server
+apt update
+apt install nginx -y
+
+# Create new index file
+echo "Hello World!" > /var/www/html/index.nginx-debian.html
+
+# Configure Nginx to listen on port 80
+config_file="/etc/nginx/sites-available/default"
+sed -i 's/^listen\s*80;/listen 80;/g' "$config_file"
+
+# Create custom 404 message
+echo "Ceci n'est pas une page" > 404.html
+sudo mv 404.html /var/www/html/
+
+# Add redirection configuration to Nginx
+echo '
+server {
+    listen 80;
+    server_name localhost;
+
+    location /redirect_me {
+        return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4
+    }
+
+    location / {
+        root /var/www/html;
+        index index.html index.htm index.nginx-debian.html;
+    }
+    error_page 404 /404.html;
+    location /404 {
+            root /var/www/html;
+            internal;
+    }
+}' > /etc/nginx/sites-available/default
+
+# Restart Nginx
+service nginx restart
