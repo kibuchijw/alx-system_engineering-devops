@@ -4,11 +4,11 @@ apt update
 apt install nginx -y
 
 # Create new index file
-echo "Hello World!" > /var/www/html/index.nginx-debian.html
+echo "Hello World!" | sudo tee /var/www/html/index.nginx-debian.html
 
 # Configure Nginx to listen on port 80
-config_file="/etc/nginx/sites-available/default"
-sed -i 's/^listen\s*80;/listen 80;/g' "$config_file"
+#config_file="/etc/nginx/sites-available/default"
+#sed -i 's/^listen\s*80;/listen 80;/g' "$config_file"
 
 # Add redirection configuration to Nginx
 echo '
@@ -17,7 +17,7 @@ server {
     server_name localhost;
 
     location /redirect_me {
-        return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4
+        return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
     }
 
     location / {
