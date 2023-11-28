@@ -18,8 +18,4 @@ username="$3"
 ssh_key_path="$4"
 
 # Transfer file using scp to the server's home directory
-if scp -o StrictHostKeyChecking=no -i "$ssh_key_path" "$file_path" "$username"@"$server_ip":~/; then
-    echo "File transferred successfully to $username@$server_ip:~/"
-else
-    echo "File transfer failed!"
-fi
+scp -o StrictHostKeyChecking=no -i "$ssh_key_path" "$file_path" "$username"@"$server_ip":~/;
