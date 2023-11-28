@@ -34,3 +34,8 @@
     * When querying Nginx at its root `/` with a GET request(requesting a page) using `curl`, it must return a page that contains the string `Hello World!`
     * As an answer file, write a Bash script that configures a new Ubuntu machine to respect above requirements (this script will be run on the server itself)
     * You can't use `systemctl` for restarting `nginx`
+### 2. Setup a domain name
+* Provide the configured `.tech` domain name
+* Requirement:
+    * Provide the domain name only(example:`foobar.tech`), no subdomain(example: `www.foobar.tech`)
+    * configure your DNS records with an A entry so that your root domain points to `web-01` IP address
