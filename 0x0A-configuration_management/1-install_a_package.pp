@@ -1,11 +1,12 @@
-# Install flask 2.1.0 from pip3
-
-package { 'python3-pip':
-  ensure => installed,
+# Puppet manifest using the pip provider to install Flask 2.1.0 and ensure Werkzeug 2.1.1 is installed
+# Install Flask using the pip provider
+package { 'flask':
+  ensure   => '2.1.0',
+  provider => 'pip3',
 }
 
-exec { 'install_flask':
-  command => '/usr/bin/pip3 install flask==2.1.0',
-  path    => '/usr/bin',
-  require => Package['python3-pip'],
+# Ensure Werkzeug is installed using the pip provider
+package { 'werkzeug':
+  ensure   => '2.1.1',
+  provider => 'pip3',
 }
