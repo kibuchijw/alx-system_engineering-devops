@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# shellcheck disable=SC2154
+# Update repositories and install nginx on the server
+apt update
+apt install nginx -y
+
+# Add custom headers
+sed -i "/http {/a\    add_header X-Served-By $HOSTNAME;" /etc/nginx/nginx.conf
+
+# Create new index file
+echo "Hello World!" > /var/www/html/index.nginx-debian.html
+
+# Configure Nginx to listen on port 80
+config_file="/etc/nginx/sites-available/default"
+sed -i 's/^listen\s*80;/listen 80;/g' "$config_file"
+
+# Restart Nginx
+service nginx restart
