@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+# Update the system package index
+sudo apt Update
+# Install HAProxy
+sudo apt install -y haproxy
+
+# Create the HAProxy configuration file with the desired settings
+sudo tee /etc/haproxy/haproxy.cfg > /dev/null <<'EOF'
+backend quxpta_tech_backend
+    balance roundrobin
+    mode http
+    server 320679-web-01 107.22.143.169:80 check
+    server 320679-web-02 54.237.48.233:80 check
+    timeout connect 5s
+    timeout server 30s
+    timeout client 30s
+
+frontend quxpta_tech_frontend
+    bind *:80
+    mode http
+    default_backend quxpta_tech_backend
+    timeout client 30s
+    timeout server 30s
+EOF
+
+# Enable and start the HAProxy service
+sudo systemctl enable haproxy
+sudo systemctl start haproxy
+
+# Create an init script for HAProxy
+sudo tee /etc/init.d/haproxy > /dev/null <<'EOF'
+#!/bin/bash
+
+case \$1 in
+    start)
+        sudo systemctl start haproxy
+        ;;
+    stop)
+        sudo systemctl stop haproxy
+        ;;
+    restart)
+        sudo systemctl restart haproxy
+        ;;
+    *)
+        echo "Usage: /etc/init.d/haproxy {start|stop|restart}"
+        exit 1
+esac
+EOF
+
+# Make the init script executable
+sudo chmod +x /etc/init.d/haproxy
+
+# Reload systemd init scripts
+sudo systemctl daemon-reload

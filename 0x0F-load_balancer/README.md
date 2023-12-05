@@ -3,6 +3,7 @@
 | Task | File |
 | ---- | ---- |
 | 0. Double the number of webservers | [0-custom_http_response_header](./0-custom_http_response_header) |
+| 1. Install your load balancer | [1-install_load_balancer](./1-install_load_balancer) |
 
 ## Tasks
 ### 0. Double the number of webservers
@@ -13,3 +14,10 @@
         * The value of the custom HTTP header must be the hostname of the server Nginx is running on
     * Write `0-custom_http_response_header` so that it configures a brand new Ubuntu machine to the requirements asked in this task
         * [Ignore](https://github.com/koalaman/shellcheck/wiki/Ignore)[SC2154](https://github.com/koalaman/shellcheck/wiki/SC2154) for `shellcheck`
+### 1. Install your load balancer
+* Install and configure HAproxy on your `lb-01` server.
+* Requirements:
+    * Configure HAproxy so that is sends traffic to `web-01` and `web-02`
+    * Distribute requests using roundrobin algorithm
+    * Make sure that HAproxy can be manage via an init script
+    * Make sure that your servers are configured with the right hostanmes: `[STUDENT_ID]-web-01` and `[STUDENT_ID]-web-02`. If not, follow this [tutorial](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/set-hostname.html)
