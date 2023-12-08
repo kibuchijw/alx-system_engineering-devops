@@ -13,7 +13,18 @@ display_info() {
 
     for sub in "${subdomains[@]}"; do
         record=$(dig +short $sub.$domain)
-        record_type=$(dig +short $sub.$domain | awk '{print $1}')
+        record_type=$(dig +short -t CNAME $sub.$domain)
+
+        if [[ -z $record_type ]]; then
+            record_type=$(dig +short -t A $sub.$domain)
+            if [[ -z $record_type ]]; then
+                record_type="unknown"
+            else
+                record_type="A"
+            fi
+        else
+            record_type="CNAME"
+        fi
 
         echo "The subdomain $sub is a $record_type record and points to $record"
     done
