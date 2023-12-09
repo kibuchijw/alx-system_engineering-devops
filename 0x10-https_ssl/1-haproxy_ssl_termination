@@ -1,0 +1,22 @@
+# Configuration for HAProxy
+backend quxpta_tech_backend
+    balance roundrobin
+    mode http
+    server 320679-web-01 107.22.143.169:80 check
+    server 320679-web-02 54.237.48.233:80 check
+    timeout connect 5s
+    timeout server 30s
+    timeout client 30s
+
+frontend quxpta_tech_frontend_http
+    bind *:80
+    bind *:443 ssl crt /etc/haproxy/certs/www.quxpta.tech.pem
+    redirect scheme https code 301 if !{ ssl_fc }
+    mode http
+    default_backend quxpta_tech_backend
+    timeout client 30s
+    timeout server 30s
+
+frontend quxpta_tech_frontend_https
+    bind *:443 ssl crt /etc/haproxy/certs/www.quxpta.tech.pem
+    default_backend quxpta_tech_backend
