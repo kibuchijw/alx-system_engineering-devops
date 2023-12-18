@@ -25,30 +25,4 @@ EOF
 
 # Enable and start the HAProxy service
 sudo systemctl enable haproxy
-sudo systemctl start haproxy
-
-# Create an init script for HAProxy
-sudo tee /etc/init.d/haproxy > /dev/null <<'EOF'
-#!/bin/bash
-
-case \$1 in
-    start)
-        sudo systemctl start haproxy
-        ;;
-    stop)
-        sudo systemctl stop haproxy
-        ;;
-    restart)
-        sudo systemctl restart haproxy
-        ;;
-    *)
-        echo "Usage: /etc/init.d/haproxy {start|stop|restart}"
-        exit 1
-esac
-EOF
-
-# Make the init script executable
-sudo chmod +x /etc/init.d/haproxy
-
-# Reload systemd init scripts
-sudo systemctl daemon-reload
+sudo systemctl restart haproxy
