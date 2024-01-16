@@ -1,22 +1,24 @@
 #!/usr/bin/python3
+"""Function that queries the Reddit API and prints
+the titles of the first 10 hot posts for a given subreddit.
+"""
 import requests
 
 
 def top_ten(subreddit):
     """
-    Print the titles of the first 10 hot posts for a given subreddit.
+    Function that queries the Reddit API and
+    prints the titles of the first 10 hot posts
+    for a given subreddit.
 
     Args:
     - subreddit (str): The name of the subreddit.
 
     Returns:
-    - None: If the subreddit is not valid
-    or if there's an issue with the API request.
+    - None: If there's an issue with the API request
+    or the subreddit is not valid.
     """
-    # Reddit API endpoint for getting subreddit posts
-    url = "https://www.reddit.com/r/{}/hot/.json".format(subreddit)
-
-    # Set a common User-Agent to avoid Too Many Requests errors
+    url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
     headers = {
         "User-Agent":
             "Mozilla/5.0 (Windows NT 10.0; Win64; x64)\
@@ -24,22 +26,20 @@ def top_ten(subreddit):
                     Chrome/58.0.3029.110 Safari/537.3"}
 
     try:
-        # Make the API request
-        response = requests.get(
-            url, headers=headers, allow_redirects=False, timeout=30)
+        response = requests.get(url, headers=headers,
+                                allow_redirects=False, timeout=30)
 
-        # Check if the request was successful and not a redirect
-        if response.status_code == 200 and not response.is_redirect:
-            # Parse JSON response and extract post titles
-            data = response.json()
-            # Extract the first 10 posts
-            posts = data["data"]["children"][:10]
-            for post in posts:
-                title = post["data"]["title"]
-                print(title)
+        # Check if the request was successful (status code 200)
+        if response.status_code == 200:
+            # Extract the list of posts
+            children = response.json().get('data').get('children')
+
+            # Print titles of the first 10 hot posts
+            for i in range(10):
+                print(children[i].get('data').get('title'))
         else:
             # Invalid subreddit or another issue
-            print(None)
-    except requests.RequestException as e:
+            print("None")
+    except Exception:
         # Handle any exceptions (e.g., network issues)
-        print("Error: {}".format(e))
+        print("None")
