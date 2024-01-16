@@ -18,7 +18,7 @@ def number_of_subscribers(subreddit):
     Returns 0 for an invalid subreddit or if there's an issue with request.
     """
     # Reddit API endpoint for getting subreddit information
-    url = f"https://www.reddit.com/r/{subreddit}/about.json"
+    url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
 
     # Set a common User-Agent to avoid Too Many Requests errors
     headers = {
@@ -29,8 +29,9 @@ def number_of_subscribers(subreddit):
 
     try:
         # Make the API request with a timeout and no redirect
+
         response = requests.get(url, headers=headers,
-                                allow_redirects=False, timeout=60)
+                                allow_redirects=False, timeout=30)
 
         # Check if the request was successful and not a redirect
         if response.status_code == 200 and not response.is_redirect:
@@ -43,5 +44,5 @@ def number_of_subscribers(subreddit):
             return 0
     except requests.RequestException as e:
         # Handle any exceptions (e.g., network issues or timeout)
-        print(f"Error: {e}")
+        print("Error: {}".format(e))
         return 0
