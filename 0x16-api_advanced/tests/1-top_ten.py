@@ -14,7 +14,7 @@ def top_ten(subreddit):
     or if there's an issue with the API request.
     """
     # Reddit API endpoint for getting subreddit posts
-    url = f"https://www.reddit.com/r/{subreddit}/hot.json"
+    url = "https://www.reddit.com/r/{}/hot/.json".format(subreddit)
 
     # Set a common User-Agent to avoid Too Many Requests errors
     headers = {
@@ -42,4 +42,4 @@ def top_ten(subreddit):
             print(None)
     except requests.RequestException as e:
         # Handle any exceptions (e.g., network issues)
-        print(f"Error: {e}")
+        print("Error: {}".format(e))
