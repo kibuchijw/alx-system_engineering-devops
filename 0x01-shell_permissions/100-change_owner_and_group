@@ -1,2 +1,3 @@
 #!/bin/bash
-chown staff:vincent -R
+find . -exec chown vincent:staff {} +
+
