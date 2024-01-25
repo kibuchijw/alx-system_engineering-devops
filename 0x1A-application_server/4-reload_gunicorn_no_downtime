@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Get the main PID of Gunicorn process 
+
+MASTER_PID=$(pgrep -f "/usr/bin/python3 /usr/local/bin/gunicorn" | head -n 1)
+
+# Check if PID exists
+if [[ -z "$MASTER_PID" ]]; then
+  echo "Error: Gunicorn master process not found!"
+  exit 1
+fi
+
+# Send HUP signal for graceful reload
+kill -HUP "$MASTER_PID"
+
+exit 0
